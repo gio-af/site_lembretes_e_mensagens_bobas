@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lembretes Bobos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Lembretes e Mensagens Bobas</h1>
+
+  <h2>Criar lembrete</h2>
+  <form id="form-lembrete">
+    <label>
+      Título:
+      <input type="text" id="titulo" required />
+    </label>
+    <br /><br />
+    <label>
+      Mensagem:
+      <textarea id="mensagem" required></textarea>
+    </label>
+    <br /><br />
+    <label>
+      Data e hora:
+      </label><input type="datetime-local" id="dataHora" required />
+    </label>
+    <br /><br />
+    <label>
+    Tipo:
+    <select id="tipo" required>
+      <option value="pessoal">Pessoal</option>
+      <option value="grupo">Grupo</option>
+    </select>
+    </label>
+    <button type="submit">Criar lembrete</button>
+  </form>
+
+  <h2>Meus lembretes</h2>
+  <ul id="lista-lembretes"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
