@@ -15,7 +15,10 @@ async function carregarLembretes() {
     const texto = l.dataHora
       ? `${tipoTexto} ${l.titulo} - ${l.mensagem} (para: ${new Date(l.dataHora).toLocaleString('pt-BR')})`
       : `${tipoTexto} ${l.titulo} - ${l.mensagem}`;
-  });
+  
+    li.textContent = texto;
+    lista.appendChild(li);
+    });
 }
 
 form.addEventListener('submit', async (e) => {
